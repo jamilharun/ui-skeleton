@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+Mono:wght@300;800;900&family=Poppins:ital,wght@0,100;0,300;0,900;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+i{
+    color:rgb(34, 34, 34);
+    font-size: 1.5rem;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+}
+p,h1,h2,h3{
+    color:rgb(34, 34, 34);
+    font-size: 1rem;
+    padding: 6px;
+}
+
+header{
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-between;
+}
+
+.header-col{width: 33%;}
+
+.logo{
+    /* margin: rem; */
+    display:  flex;
+}
+
+.logo a h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:rgb(34, 34, 34);
+}
+
+.srch_bar{
+    /* border-radius: 15px; */
+    /* padding-top: 20px; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position:relative; 
+    padding:0; 
+    margin:0;
+    
+}
+.srch_bar input{
+    width: 100%;
+    height: 70%;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    padding: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+#input_img { 
+    position:absolute; 
+    bottom:12px; 
+    left: 36rem; 
+    width:10px; 
+    height:10px; }
+
+
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* i supposed to put the  */
+.spb_bar{
+    direction: rtl;
+}
+
+
+/* navbar */
+nav{
+    background-color: rgb(145, 145, 145);
+    width: 25rem;
+    height: 92.44vh;
+    position: relative;
+    left: 0;
+    /* width: auto; */
+    padding: 1rem;
+    
+}
+#close-btn{
+    /* position: relative;
+    left: 48%; */
+    direction: rtl;
+}
+#sub-menu-btn{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+nav .main-menu{
+    position: relative;
+}
+nav .main-menu .main-btn{
+    padding: .5rem;
+    list-style: none;
+}
+nav .main-menu .main-btn:first-child{
+    display: flex;
+}
+nav .main-menu .main-btn .closebtn{
+    direction: rtl;
+    width: 50%;
+}
+
+nav .main-menu .main-btn a{
+    text-decoration: none;
+    /* justify-content: space-between; */
+    display: flex;
+    width: 50%;
+    
+}
+nav .main-menu .main-btn a i{
+    display: flex;
+}
+nav .main-menu:last-child{
+    top: 40%;
+}
+#close-btn{
+    direction: rtl;
+}
+
+/* main content */
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:masonry;
+    padding: 10px
+
+}
+
+.positioned {grid-column: 2 / 2;}
+.items {
+    
+    width: 480px;
+    height: 315px;
+    
+}
+
+
+.items .image{
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+}
+.items .postedBy i{
+    border-radius: 50%;
+    
+    position: relative;
+    top: -50px;
+}
+/* profile */
+.userProfile{
+width: 65rem;
+/* background-color: grey; */
+}
+.userProfile .profile{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.userProfile .profilePic{
+    padding-top: 10rem;
+}
+.userProfile .profilePic i{
+    font-size: 10rem;
+}
+.userProfile .profileName{
+    padding: auto;
+}
+.userProfile .profileName h1{
+    font-size: 35px;
+}
+.userProfile .profileName p{
+    font-size: 20px;
+}
+.userProfile .userNav{
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-between;
+}
+.userProfile .userNav div{
+    font-size: 20px;
+}
+.userProfile .userNav div:hover{
+    background-color: rgb(192, 192, 192);
+    transition: 1s;
+}
+.contPost{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-top: 10px;
+}
+.posts{
+    background-color: rgb(204, 204, 204);
+    width: 60%;
+    height: 400px;
+    border-radius: 15px;
+
+}
+/* friends */
+.contFriends .grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:masonry;
+    padding: 10px
+}
+.contFriends .grid .items{
+    background-color: rgb(204, 204, 204);
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+}
+.contFriends .grid .items .respond{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.contFriends .grid .items .respond div{
+    background-color: rgb(185, 185, 185);
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    
+}
+.contFriends .grid .items .respond div p{
+    text-align: center;
+    font-size: 15px;
+}
+/* chat */
+.chat{
+    display: flex;
+}
+.message{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(182, 182, 182);
+}
+.message ul li{
+    padding: 15px 30px;
+}
+.convo{
+    width: 60%;
+}
+.convo .convoPro{
+    background-color: rgb(192, 192, 192);
+    height: 50px;
+}
+.convo .conversation{
+    padding: 10px;
+}
+.convo .conversation .he-she{
+    background-color: rgb(221, 221, 221);
+    width: 50%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.convo .conversation .he-she i, .convo .conversation .you i{
+    color: rgb(146, 146, 146);
+    position: relative;
+    top: -40%;
+    
+}
+.convo .conversation .you{
+    background-color: rgb(236, 236, 236);
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    direction: rtl;
+}
+.convo .conversation div{
+    margin: 15px;
+}
+
+/* notification */
+
+.notif{
+    width: 60%;
+}
+.videoHeader, .imageHeader{
+    display: flex;
+}
+.notif .notifHeader{
+    display: flex;
+}
+.notif .notifAlert{
+    padding: 10px;
+}
+.notif .notifAlert .notifFrom{
+    margin: 10px;
+    border-radius: 15px;
+    width: 60%;
+    height: 100px;
+    background-color: rgb(201, 201, 201);
+}
+.gridVideo {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:masonry;
+    padding: 10px
+
+}
+
+.items .video{
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+}
+/* pages */
+
+.page{
+    width: 100%;
+    height: 100%;
+}
+.page .pageHeader{
+    display: flex;
+}
+.page .creators{
+    display: flex;
+    padding: 15px;
+}
+.page .creators .pageMain{
+    width: 60%;
+    height: 400px;
+    
+    border-radius: 15px;
+}
+.page-activities{
+    display: flex;
+    
+    margin: 10px;
+}
+.page-activities .pagePost{
+    margin: 10px;
+    background-color: rgb(151, 151, 151);
+    width: 100px;
+    height: 100%;
+}
+.creators .pageMain .pageLiked{
+    margin: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 15px;
+    width: 100%;
+    height: 350px;
+}
+.sp-page{
+    margin: 10px;
+}
+.pageSuggested .pagePopular .pageTrending .pageSponsore{
+    flex-direction: column;
+}
